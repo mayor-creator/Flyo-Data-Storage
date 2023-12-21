@@ -1,0 +1,108 @@
+@use './variables' as v;
+
+body {
+  background-color: v.$very_dark_blue;
+  background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: v.$pale_blue;
+  font-family: v.$font-family;
+  font-size: v.$font-size;
+  font-weight: v.$font-weight-four;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.left-container {
+  background-color: v.$dark_blue;
+  border-radius: 10px 60px 10px 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.image-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section {
+  background-color: v.$very_dark_blue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.image {
+  padding: 10px;
+}
+
+.right-container {
+  background-color: v.$dark_blue;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#top-paragraphy {
+  text-align: center;
+  padding: 10px;
+}
+
+.gradient-line {
+  background-color: v.$very_dark_blue;
+  margin: 10px 10px 0px 10px;
+  border-radius: 50px;
+}
+
+#gradient {
+  max-width: 190px;
+  padding: 5px;
+  background-image: linear-gradient(to right, #FFA399, #FF4D97);
+  border-radius: inherit;
+}
+
+.middle-value {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 270px;
+  margin-bottom: 50px;
+}
+
+.button {
+  background-color: v.$pale_blue;
+  border-radius: 10px;
+  height: 80px;
+  width: 190px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 50px;
+}
+
+.space-left {
+  text-align: center;
+  padding: 20px;
+}
+
+.big {
+  color: v.$very_dark_blue;
+  font-weight: v.$font_weight-seven;
+  font-size: 30px;
+}
+
+.gb-value {
+  color: v.$grayish_blue;
+  padding-left: 10px;
+}
