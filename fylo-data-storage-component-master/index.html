@@ -4,60 +4,52 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <title>Frontend Mentor | Fylo data storage component</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styleReset.css">
+    <link rel="stylesheet" href=".//sass/style.css">
 </head>
 
 <body>
-    <div class="main-page">
+    <main class="main-page">
         <div class="left-container">
             <div class="logo">
                 <img src="images/logo.svg" alt="logo" />
             </div>
-            <div class="section document">
-                <img src="images/icon-document.svg" alt="document" />
-            </div>
-            <div class="section folder">
-                <img src="images/icon-folder.svg" alt="folder" />
-            </div>
-            <div class="section upload">
-                <img src="images/icon-upload.svg" alt="upload" />
+            <div class="image-container">
+                <div class="section">
+                    <img class="image" src="images/icon-document.svg" alt="document" aria-label="hidden" />
+                </div>
+                <div class="section">
+                    <img class="image" src="images/icon-folder.svg" alt="folder" aria-label="hidden" />
+                </div>
+                <div class="section">
+                    <img class="image" src="images/icon-upload.svg" alt="upload" aria-label="hidden" />
+                </div>
             </div>
         </div>
-
         <div class="right-container">
-            <div class="top">
-                <p id="top-paragraphy">
-                    You’ve used <span class="small">815 GB</span> of your storage
-                </p>
-            </div>
-
+            <p id="top-paragraphy">
+                You’ve used <span class="small">815 GB</span> of your storage
+            </p>
             <div class="gradient-line">
                 <div id="gradient"></div>
             </div>
-
             <div class="middle-value">
                 <p class="small">0 GB</p>
                 <p class="small">1000 GB</p>
             </div>
-
-            <div class="bottom-value">
-                <p>
-                    <span class="big">185</span> <span class="gb-value">GB LEFT</span>
-                </p>
-            </div>
         </div>
-    </div>
+        <div class="button">
+            <p class="space-left">
+                <span class="big">185</span> <span class="gb-value">GB LEFT</span>
+            </p>
+        </div>
+        <main />
 </body>
-
-<!--<div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
-    >. Coded by <a href="#">Paul Aboagye</a>.
-</div>
---->
 
 </html>
