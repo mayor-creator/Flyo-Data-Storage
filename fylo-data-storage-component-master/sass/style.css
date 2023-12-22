@@ -11,9 +11,23 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  body {
+    background-image: url("../images/bg-desktop.png");
+    background-position: bottom;
+    background-size: auto;
+  }
+}
 
 main {
   padding: 20px;
+}
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .left-container {
@@ -22,23 +36,39 @@ main {
   padding: 10px;
   margin-bottom: 20px;
 }
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  .left-container {
+    border-radius: 10px 100px 10px 10px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
 
 .logo {
   margin-top: 20px;
   padding: 10px;
+}
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  .logo {
+    margin: 20px;
+    padding: 10px;
+  }
 }
 
 .image-container {
   display: flex;
   margin-top: 20px;
 }
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  .image-container {
+    margin: 20px;
+    padding: 10px;
+  }
+}
 
 .section {
   background-color: hsl(229, 57%, 11%);
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 10px;
 }
 
@@ -52,16 +82,34 @@ main {
   padding: 10px;
   margin-top: 20px;
 }
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  .right-container {
+    padding: 0px;
+    margin: 0px;
+  }
+}
 
 #top-paragraphy {
   text-align: center;
   padding: 10px;
+}
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  #top-paragraphy {
+    text-align: start;
+    padding: 20px;
+  }
 }
 
 .gradient-line {
   background-color: hsl(229, 57%, 11%);
   margin: 10px 10px 0px 10px;
   border-radius: 50px;
+}
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  .gradient-line {
+    width: 456px;
+    margin: 0px 20px 0px 20px;
+  }
 }
 
 #gradient {
@@ -70,6 +118,11 @@ main {
   background-image: linear-gradient(to right, #FFA399, #FF4D97);
   border-radius: inherit;
 }
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  #gradient {
+    max-width: 340px;
+  }
+}
 
 .middle-value {
   display: flex;
@@ -77,6 +130,12 @@ main {
   padding: 10px;
   max-width: 270px;
   margin-bottom: 50px;
+}
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  .middle-value {
+    max-width: 456px;
+    margin: 0px 20px 20px 20px;
+  }
 }
 
 .button {
@@ -87,6 +146,12 @@ main {
   margin: 0 auto;
   position: relative;
   bottom: 50px;
+}
+@media (min-width: 64.0625em) and (max-width: 100em) {
+  .button {
+    bottom: 70px;
+    right: 220px;
+  }
 }
 
 .space-left {

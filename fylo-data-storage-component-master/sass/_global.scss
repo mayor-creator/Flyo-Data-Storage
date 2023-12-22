@@ -12,35 +12,63 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include v.desktop {
+    background-image: url("../images/bg-desktop.png");
+    background-position: bottom;
+    background-size: auto;
+  }
 }
 
 main {
   padding: 20px;
+  //background-color: red;
+
+  @include v.desktop {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
+
 
 .left-container {
   background-color: v.$dark_blue;
   border-radius: 10px 60px 10px 10px;
   padding: 10px;
   margin-bottom: 20px;
+
+  @include v.desktop {
+    border-radius: 10px 100px 10px 10px;
+    // width: 354px;
+    margin: 0px;
+    padding: 0px;
+  }
 }
 
 .logo {
   margin-top: 20px;
   padding: 10px;
+
+  @include v.desktop {
+    margin: 20px;
+    padding: 10px;
+  }
 }
 
 .image-container {
   display: flex;
   margin-top: 20px;
+
+  @include v.desktop {
+    margin: 20px;
+    padding: 10px;
+  }
 }
 
 .section {
   background-color: v.$very_dark_blue;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 10px;
 }
 
@@ -53,17 +81,32 @@ main {
   border-radius: 10px;
   padding: 10px;
   margin-top: 20px;
+
+  @include v.desktop {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 #top-paragraphy {
   text-align: center;
   padding: 10px;
+
+  @include v.desktop {
+    text-align: start;
+    padding: 20px;
+  }
 }
 
 .gradient-line {
   background-color: v.$very_dark_blue;
   margin: 10px 10px 0px 10px;
   border-radius: 50px;
+
+  @include v.desktop {
+    width: 456px;
+    margin: 0px 20px 0px 20px;
+  }
 }
 
 #gradient {
@@ -71,6 +114,10 @@ main {
   padding: 5px;
   background-image: linear-gradient(to right, #FFA399, #FF4D97);
   border-radius: inherit;
+
+  @include v.desktop {
+    max-width: 340px;
+  }
 }
 
 .middle-value {
@@ -79,6 +126,11 @@ main {
   padding: 10px;
   max-width: 270px;
   margin-bottom: 50px;
+
+  @include v.desktop {
+    max-width: 456px;
+    margin: 0px 20px 20px 20px;
+  }
 }
 
 .button {
@@ -89,6 +141,11 @@ main {
   margin: 0 auto;
   position: relative;
   bottom: 50px;
+
+  @include v.desktop {
+    bottom: 70px;
+    right: 220px;
+  }
 }
 
 .space-left {
