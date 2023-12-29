@@ -22,15 +22,14 @@ body {
 
 main {
   padding: 20px;
-  //background-color: red;
 
   @include v.desktop {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 200px;
   }
 }
-
 
 .left-container {
   background-color: v.$dark_blue;
@@ -83,8 +82,8 @@ main {
   margin-top: 20px;
 
   @include v.desktop {
-    padding: 0px;
-    margin: 0px;
+    padding: 20px;
+    margin: 42px 20px 20px 20px;
   }
 }
 
@@ -144,7 +143,7 @@ main {
 
   @include v.desktop {
     bottom: 70px;
-    right: 220px;
+    right: 260px;
   }
 }
 

@@ -27,6 +27,7 @@ main {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 200px;
   }
 }
 
@@ -84,8 +85,8 @@ main {
 }
 @media (min-width: 64.0625em) and (max-width: 100em) {
   .right-container {
-    padding: 0px;
-    margin: 0px;
+    padding: 20px;
+    margin: 42px 20px 20px 20px;
   }
 }
 
@@ -150,7 +151,7 @@ main {
 @media (min-width: 64.0625em) and (max-width: 100em) {
   .button {
     bottom: 70px;
-    right: 220px;
+    right: 260px;
   }
 }
 
